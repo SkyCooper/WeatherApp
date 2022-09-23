@@ -63,7 +63,26 @@ body{
   cursor: pointer;
 }
 
-.content{
+/* .content{
+  background-color: antiquewhite;
+  color: black;
+  height: 25rem;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 4px 4px 14px;
+  width: 300px;
+} */
+
+.ulList{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.ulList li{
   background-color: antiquewhite;
   color: black;
   height: 25rem;
