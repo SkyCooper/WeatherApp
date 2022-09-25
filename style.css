@@ -1,6 +1,10 @@
-*{margin: 0; padding: 0; box-sizing: border-box}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   background-image: url(./images/bg.webp);
@@ -10,26 +14,25 @@ body{
   height: 100vh;
 }
 
-.app{
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: rgba(0,0,0,0.4);
-  height:35vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 35vh;
   /* border: 2px solid black; */
 }
 
-.logo{
+.logo {
   margin-top: 2rem;
 }
 
-.header{
+.header {
   padding: 50px 30px;
-
 }
 
-.header h1{
+.header h1 {
   font-size: 50px;
   color: goldenrod;
   text-shadow: 7px 4px 10px rgba(150, 150, 150, 1);
@@ -47,13 +50,13 @@ body{
   font-weight: 800;
 }
 
-.search{
+.search {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.header .btn{
+.header .btn {
   padding: 10px 20px;
   background-color: goldenrod;
   color: black;
@@ -74,7 +77,15 @@ body{
   width: 300px;
 } */
 
-.ulList{
+.explain {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: brown;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.ulList {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
@@ -82,40 +93,51 @@ body{
   flex-wrap: wrap;
 }
 
-.ulList li{
+.ulList li {
   background-color: antiquewhite;
   color: black;
-  height: 25rem;
-  padding: 20px;
+  height: 17rem;
+  padding: 10px;
   border: none;
   border-radius: 20px;
   box-shadow: 4px 4px 14px;
-  width: 300px;
+  width: 11rem;
 }
 
-.city{
-  font-size: 35px;
+.city {
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 10px;
   text-shadow: 7px 4px 10px rgba(150, 150, 150, 1);
 }
-.temp{
-  font-size: 80px;
+
+.country {
+  background-color: orange;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 2px;
+  position: relative;
+  top: -5px;
+  left: 10px;
+}
+
+.temp {
+  font-size: 3rem;
   font-weight: 700;
   text-shadow: 7px 4px 10px rgba(150, 150, 150, 1);
 }
 
-.icon img{
-  width: 160px;
-
+.icon img {
+  width: 8rem;
 }
-.description{
-  font-size: 25px;
+.description {
+  font-size: 1.2rem;
   font-style: italic;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   text-shadow: 7px 4px 10px rgba(150, 150, 150, 1);
   margin-bottom: 15px;
 }
+
 /* .maxmin{
   font-size: 25px;
   margin-bottom: 15px;
