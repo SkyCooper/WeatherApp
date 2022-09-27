@@ -1,25 +1,36 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
+# Project : Weather Condition App
 
-# Project-004 : Weather_Condition_App (JS-04)
+### Check The Live Website ➡️ [Live Website](https://skycooper.github.io/WeatherApp/)
 
 ## Description
 Project aims to display current weather data of searched city around the world with fetching Weather Api data.
 
 ## Learning Outcomes
 
-At the end of the this project, students will be able to;
+At the end of the this project, you will be able to;
 
 - analyze a problem, create a weather condition app populated with a real weather api.
 
-- demonstrate their knowledge of algorithmic design principles.
+- demonstrate your knowledge of algorithmic design principles.
 
    
 ## Problem Statement
 
 - Design a weather condition page following the design and populate data for searched city with using of axios in JS.
 
-![Form](weather_app.gif)
+## Visualization of the Website
+
+![Form](https://github.com/SkyCooper/WeatherApp/blob/main/WeatherApp.gif)
+
+## Project Skeleton 
+
+|----Weather Condition App
+
+        |----index.html  
+        |----style.css   
+        |----app.js
+        |----weatherApp.gif
+        |----readme.md 
 
 User story;
 
@@ -31,7 +42,5 @@ User story;
 
 🔥 You can use [OpenWeather Api](https://openweathermap.org/) for your app. 
 
-🔥 You don’t need to create a new template for this project, you can use this repository template for html and css. We will be concerned in javascript side.
-
-
-<p align="center"> ✍ Happy Coding ⌛ <p>
+### Overview
+I mastered HTML, CSS and Javascript (fetch api) features in this project. You can see the visual representation of the website above.
