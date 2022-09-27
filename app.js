@@ -5,7 +5,6 @@ const ulList = document.querySelector(".ulList");
 const explanation = document.querySelector(".explain");
 console.log(ulList);
 
-
 //? Api'den sorgu yapmak için gerekli
 const getResult = (city) => {
   let api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric&lang=tr`;
@@ -30,17 +29,21 @@ const getResult = (city) => {
   input.value = "";
 };
 
-
+let citiesArray = [];
 //? Submit butonuna basınca sorgu çalışsın
 button.addEventListener("click", () => {
-  citiesArray = [];
   if (!input.value) {
-    explanation.innerText = "Please enter a city name"
+    explanation.innerText = "Please enter a city name";
   } else {
-    explanation.innerText = ""
-    citiesArray.push(input.value.toLowerCase());
+    explanation.innerText = "";
     console.log(citiesArray);
-    return getResult(input.value);
+    if (citiesArray.includes(input.value.toLowerCase())) {
+      explanation.innerText = `You already know the weather for 😉 ${input.value.toUpperCase()}. Please enter different city.`;
+      input.value = "";
+    } else {
+      citiesArray.push(input.value.toLowerCase());
+      return getResult(input.value);
+    }
   }
 });
 
