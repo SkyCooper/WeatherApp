@@ -11,7 +11,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .app {
@@ -19,8 +19,8 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 35vh;
+  /* background-color: rgba(0, 0, 0, 0.4);
+  height: 35vh; */
   /* border: 2px solid black; */
 }
 
@@ -64,6 +64,17 @@ body {
   border: 0;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s;
+box-shadow: -4px 1px 42px 12px rgba(66, 68, 90, 1);
+
+}
+
+.header .btn:hover{
+  opacity: 0.8;
+  color: wheat;
+}
+.header .btn:active{
+ transform: scale(95%);
 }
 
 /* .content{
@@ -143,3 +154,38 @@ body {
   margin-bottom: 15px;
   text-shadow: 7px 4px 10px rgba(150, 150, 150, 1);
 } */
+
+
+
+
+.snowy {
+    min-height: 100vh;
+    background-image: url("./images/snow.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cloudy {
+    min-height: 100vh;
+    background-image: url("./images/clouds.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.rainy {
+    min-height: 100vh;
+    background-image: url("./images/rain.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sunny {
+    min-height: 100vh;
+    background-image: url("./images/sun.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

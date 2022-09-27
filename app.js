@@ -3,6 +3,7 @@ const input = document.getElementById("input");
 const button = document.getElementById("submit");
 const ulList = document.querySelector(".ulList");
 const explanation = document.querySelector(".explain");
+const body = document.querySelector("body");
 console.log(ulList);
 
 //? Api'den sorgu yapmak için gerekli
@@ -25,6 +26,28 @@ const getResult = (city) => {
         }.png" alt=""></div>
         <div class="description">${weather[0].description.toUpperCase()}</div>
       </li>`;
+
+        if (weather[0].description == "açık") {
+          body.className = "sunny";
+        } else if (
+          weather[0].description == "az bulutlu" ||
+          weather[0].description == "kapalı" ||
+          weather[0].description == "parçalı bulutlu" ||
+          weather[0].description == "parçalı az bulutlu" ||
+          weather[0].description == "sisli"
+        ) {
+          body.className = "cloudy";
+        } else if (
+          weather[0].description == "sağanak yağmur" ||
+          weather[0].description == "kısa süreli hafif yoğunluklu yağmur" ||
+          weather[0].description == "kısa süreli yağmur" ||
+          weather[0].description == "yağmurlu" ||
+          weather[0].description == "fırtına"
+        ) {
+          body.className = "rainy";
+        } else if (weather[0].description == "kar") {
+          body.className = "snowy";
+        }
     });
   input.value = "";
 };
@@ -53,6 +76,9 @@ input.addEventListener("keydown", (e) => {
 });
 
 //? açılınca ve refresh olunca input aktif olsun
-window.addEventListener("load", () => {
-  input.focus();
-});
+// window.addEventListener("load", () => {
+//   input.focus();
+// });
+
+//* kısa kullanım
+window.onload = () =>  input.focus();
