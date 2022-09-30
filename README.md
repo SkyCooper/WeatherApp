@@ -1,6 +1,10 @@
 # Project : Weather Condition App
 
-### Check The Live Website ➡️ [Live Website](https://skycooper.github.io/WeatherApp/)
+## Check The Live Website ➡️ [Live Website](https://skycooper.github.io/WeatherApp/)
+
+## Visualization of the Website
+
+![Form](https://github.com/SkyCooper/WeatherApp/blob/main/WeatherApp.gif)
 
 ## Description
 Project aims to display current weather data of searched city around the world with fetching Weather Api data.
@@ -18,9 +22,6 @@ At the end of the this project, you will be able to;
 
 - Design a weather condition page following the design and populate data for searched city with using of axios in JS.
 
-## Visualization of the Website
-
-![Form](https://github.com/SkyCooper/WeatherApp/blob/main/WeatherApp.gif)
 
 ## Project Skeleton 
 
